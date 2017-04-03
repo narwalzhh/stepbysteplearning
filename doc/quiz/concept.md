@@ -44,12 +44,12 @@
 #### 简单解释以下 Linux 命令
 > The answer goes here
 >```
-1. cd:
-2. ls:
-3. ll:
-4. .:
-5. ..:
-6. cat:
+> 1. cd:
+> 2. ls:
+> 3. ll:
+> 4. .:
+> 5. ..:
+> 6. cat:
 >```
 
 #### 安装 git 后，如何指定全局的用户名（user.name）和邮箱（user.email）
@@ -84,15 +84,13 @@
 
 #### 如何拉取远程仓库的更新到本地并与本地代码合并
 > The answer goes here
->```
->```
-
+> ```
+> ```
 
 #### 如何将本地仓库中新的提交推送到远程
 > The answer goes here
->```
->```
-
+> ```
+> ```
 
 ### Day 3
 #### 如何使用 Linux 命令创建一个文件夹
@@ -101,6 +99,11 @@
 >```
 
 #### Linux 下如何查看当前路径
+> The answer goes here
+>```
+>```
+
+#### 如何查看代码提交历史
 > The answer goes here
 >```
 >```
