@@ -107,3 +107,14 @@
 > The answer goes here
 >```
 >```
+
+#### 请简单解释 Java 中运算符 ^
+> The answer goes here
+>```
+>```
+
+#### 请自行搜索 Java 中求立方根的函数
+> The answer goes here
+>```
+>```
+
