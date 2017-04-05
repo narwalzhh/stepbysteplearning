@@ -135,3 +135,42 @@ pwd
 git log
 git reflog
 >```
+
+#### Java 基本数据类型占用字节大小
+> The answer goes here
+>```
+> 1. int:
+> 2. short: 
+> 3. long:
+> 4. byte:
+> 5. float: 
+> 6. double:
+>```
+
+#### 请简单解释 Java 中运算符 ^
+> The answer goes here
+>```
+>```
+
+#### 请自行搜索 Java 中求立方根的函数
+> The answer goes here
+>```
+>```
+
+#### 请写出 8、10、 15、127、258、339 的二进制表示法，并计算 8 ^ 10 的值
+> The answer goes here
+>```
+> 1. 8:
+> 2. 10:
+> 3. 15:
+> 4. 127:
+> 5. 258:
+> 6. 339:
+> 7. 8 ^ 10:
+>```
+
+#### 请说明 'A' 与 "A" 是否标识相同的含义，如果不是，则解释为什么
+> The answer goes here
+>```
+>```
+
