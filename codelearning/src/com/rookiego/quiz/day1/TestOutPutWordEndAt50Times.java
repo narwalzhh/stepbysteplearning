@@ -1,6 +1,6 @@
 package com.rookiego.quiz.day1;
 
-public class outputhelloworldendat50times {
+public class TestOutPutWordEndAt50Times {
 	public static void main(String[] args) {
 		String world = "Hello World!";
 		for (int i = 1; i <= 100; i++) {

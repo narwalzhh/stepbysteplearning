@@ -1,6 +1,6 @@
 package com.rookiego.quiz.day1;
 
-public class outputhelloworld100timesodd {
+public class TestOutPutWord100TimesOdd {
 	public static void main(String[] args) {
 		String world = "Hello World!";
 		int i = 0;
