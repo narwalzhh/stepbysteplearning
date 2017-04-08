@@ -175,3 +175,113 @@
 >```
 >'A'为字符，是基本类型。"A"为字符串类，不是基本类型
 >```
+
+#### char 类型的 'A', 'a', 'Z', 'z' 字符常量对应的 10 进制数字分别是多少
+> The answer goes here
+>```
+> 1. 'A': 
+> 2. 'a':
+> 3. 'Z':
+> 4. 'z': 
+>```
+
+#### 请使用转义字符修改下面代码中的错误
+> The answer goes here
+>```
+> String str = "{"id" : "ID00001", "code" : "liuyb", "name" : "liuyabo"}";
+> String str = "C:\file\doc\a.txt";
+>```
+
+#### 请指出下列变量命名的错误之处
+> The answer goes here
+>```
+> 1. int 1i = 10; ----> 
+> 2. String default = "what's your super power again ? answer: I'm rich !!!"; ---->
+> 3. long number_ = 10000000L; ----> 
+>```
+
+#### java 中，指示常量的关键字是什么，并简单解释此关键字的作用
+> The answer goes here
+>```
+>```
+
+#### 请写出 x = x + 5, y = y * 8 的简单书写方式
+> The answer goes here
+>```
+>```
+
+#### 请计算下列变量的值
+> The answer goes here
+>```
+> int i = 7;
+> int j = 8;
+> int a = 1 + ++i;
+> int b = 4 * j++;
+> a:  
+> a 的运算方式：
+> b: 
+> b 的运算方式： 
+>```
+
+##### 请简述 &&, ||, &, | 的运算规则
+> The answer goes here
+>```
+> 1. if (expression1 && expression2)  
+> 2. if (expression1 || expression2) 
+> 3. if (expression1 & expression2) 
+> 4. if(expression1 | expression2)
+>```
+
+#### 请计算下列数字位运算符后的结果，并用二进制表示
+> The answer goes here
+>```
+> 运算式       十进制     二进制
+> 10            
+> 10 << 1
+> 10 << 2 
+> 10 >> 1
+>```
+
+#### 请写出下列表达式的值并解释
+> The answer goes here
+>```
+> String string = "I'm using java!" 
+> string.substring(0, 5):
+> string.substring(9): 
+>```
+
+#### 请运行下列代码，并解释现象
+> The answer goes here
+>```
+>   String a = "a";
+>       if (a.length() == 1) {
+>           a = null;
+>       }
+>   System.out.println(a.equals("abc"));
+> 
+>   String a = "a";
+>       if (a.length() == 1) {
+>           a = null;
+>       }
+>   System.out.println("abc".equals(a));
+>
+> 解释：
+>```
+
+##### 请自行搜索 switch case 语句的穿透现象，并作简单解释
+> The answer goes here
+>```
+>```
+
+#### 请使用两种 for 循环方式，取出数组中的每一个元素
+> The answer goes here
+>```
+> String[] str = {"烤", "鸡", "翅", "膀", "啊", "，", "我", "最", "爱", "吃", "！"};
+>```
+
+#### 请将数组转化成 List
+> The answer goes here
+>```
+> String[] str = {"烤", "鸡", "翅", "膀", "啊", "，", "我", "最", "爱", "吃", "！"};
+>```
+
