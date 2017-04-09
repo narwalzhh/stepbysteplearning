@@ -179,35 +179,41 @@
 #### char 类型的 'A', 'a', 'Z', 'z' 字符常量对应的 10 进制数字分别是多少
 > The answer goes here
 >```
-> 1. 'A': 
-> 2. 'a':
-> 3. 'Z':
-> 4. 'z': 
+> 1. 'A': 65
+> 2. 'a': 97
+> 3. 'Z': 90
+> 4. 'z': 122
 >```
 
 #### 请使用转义字符修改下面代码中的错误
 > The answer goes here
 >```
-> String str = "{"id" : "ID00001", "code" : "liuyb", "name" : "liuyabo"}";
-> String str = "C:\file\doc\a.txt";
+> String str = "{\"id\" : \"ID00001\", \"code\" : \"liuyb\", \"name\" : \"liuyabo\"}";
+> String str = "C:\\file\\doc\\a.txt";
 >```
 
 #### 请指出下列变量命名的错误之处
 > The answer goes here
 >```
-> 1. int 1i = 10; ----> 
-> 2. String default = "what's your super power again ? answer: I'm rich !!!"; ---->
-> 3. long number_ = 10000000L; ----> 
+> 1. int 1i = 10; ----> 变量名首位不可为数字
+> 2. String default = "what's your super power again ? answer: I'm rich !!!"; ----> 变量名不可为保留字
+> 3. long number_ = 10000000L; ----> 变量名首字母应大写
 >```
 
 #### java 中，指示常量的关键字是什么，并简单解释此关键字的作用
 > The answer goes here
 >```
+>final
+>使用时表示无法改变的，可以用于修饰变量，变量值为常量不能再次被修改
+>用于修饰方法，则该方法可以被子类继承，但不能被覆盖
+>用于修饰类时，表示该类不能再被继承，且该类中的方法均为final方法
 >```
 
 #### 请写出 x = x + 5, y = y * 8 的简单书写方式
 > The answer goes here
 >```
+>x += 5
+>y *= 8
 >```
 
 #### 请计算下列变量的值
@@ -217,19 +223,19 @@
 > int j = 8;
 > int a = 1 + ++i;
 > int b = 4 * j++;
-> a:  
-> a 的运算方式：
-> b: 
-> b 的运算方式： 
+> a:  9
+> a 的运算方式：i自增1后，再与1相加
+> b:  32
+> b 的运算方式： 4乘以j后，j再自增1
 >```
 
 ##### 请简述 &&, ||, &, | 的运算规则
 > The answer goes here
 >```
-> 1. if (expression1 && expression2)  
-> 2. if (expression1 || expression2) 
-> 3. if (expression1 & expression2) 
-> 4. if(expression1 | expression2)
+> 1. if (expression1 && expression2)  &的短路运算，若左为假，不计算右边，表达式为假
+> 2. if (expression1 || expression2)  |的短路运算，若左为真，不计算右边，表达式为真
+> 3. if (expression1 & expression2)   左右均为真，表达式为真
+> 4. if(expression1 | expression2)    左右只需有一个为真，表达式为真，左右均为假，表达式为假
 >```
 
 #### 请计算下列数字位运算符后的结果，并用二进制表示
@@ -237,17 +243,17 @@
 >```
 > 运算式       十进制     二进制
 > 10            
-> 10 << 1
-> 10 << 2 
-> 10 >> 1
+> 10 << 1       20        10100
+> 10 << 2       40       101000
+> 10 >> 1       5          0101
 >```
 
 #### 请写出下列表达式的值并解释
 > The answer goes here
 >```
 > String string = "I'm using java!" 
-> string.substring(0, 5):
-> string.substring(9): 
+> string.substring(0, 5): "I'm u"  substring（a , b）取子字符串，自a位开始，b位结束，包含a，不包含b
+> string.substring(9):  "java！"   substring(c)取子字符串，自a位开始至字符串结束
 >```
 
 #### 请运行下列代码，并解释现象
@@ -265,12 +271,13 @@
 >       }
 >   System.out.println("abc".equals(a));
 >
-> 解释：
+> 解释：equals()方法在String中重写，用于比较调用对象引用与方法参数引用所指向字符串内容是否相同。a为String类的引用，前者将a指向null后，a表示不确定的对象，因此a不再包含equals()方法，因此运行程序报错。后者"abc"为字符串对象，包含equals()方法，比较"abc"与null指向内容后发现不同，因此返回false
 >```
 
 ##### 请自行搜索 switch case 语句的穿透现象，并作简单解释
 > The answer goes here
 >```
+>switch语句在执行时，会首先找到匹配的case处，自该case处开始执行，直至break或switch语句结束的右大括号处，忽略中间出现的其他case值，这种情况称为穿透现象。
 >```
 
 #### 请使用两种 for 循环方式，取出数组中的每一个元素
@@ -283,5 +290,6 @@
 > The answer goes here
 >```
 > String[] str = {"烤", "鸡", "翅", "膀", "啊", "，", "我", "最", "爱", "吃", "！"};
+> ArrayList<Element> arrayList = new ArrayList<Element>(Arrays.asList(str));
 >```
 
