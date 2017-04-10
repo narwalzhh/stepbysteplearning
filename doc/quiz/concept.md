@@ -260,27 +260,27 @@
 > The answer goes here
 >```
 >   String a = "a";
->       if (a.length() == 1) {
->           a = null;
->       }
+>   if (a.length() == 1) {
+>       a = null;
+>   }
 >   System.out.println(a.equals("abc"));
 > 
 >   String a = "a";
->       if (a.length() == 1) {
->           a = null;
->       }
+>  if (a.length() == 1) {
+>      a = null;
+>  }
 >   System.out.println("abc".equals(a));
 >
 > 解释：equals()方法在String中重写，用于比较调用对象引用与方法参数引用所指向字符串内容是否相同。a为String类的引用，前者将a指向null后，a表示不确定的对象，因此a不再包含equals()方法，因此运行程序报错。后者"abc"为字符串对象，包含equals()方法，比较"abc"与null指向内容后发现不同，因此返回false
 >```
 
-##### 请自行搜索 switch case 语句的穿透现象，并作简单解释
+#### 请自行搜索 switch case 语句的穿透现象，并作简单解释
 > The answer goes here
 >```
 >switch语句在执行时，会首先找到匹配的case处，自该case处开始执行，直至break或switch语句结束的右大括号处，忽略中间出现的其他case值，这种情况称为穿透现象。
 >```
 
-#### 请使用两种 for 循环方式，取出数组中的每一个元素
+#### 请使用两种形式的 for 循环，遍历数组元素
 > The answer goes here
 >```
 > String[] str = {"烤", "鸡", "翅", "膀", "啊", "，", "我", "最", "爱", "吃", "！"};
@@ -294,3 +294,4 @@
 > ArrayList<Element> arrayList = new ArrayList<Element>(Arrays.asList(str));
 >```
 
+### Day 4
