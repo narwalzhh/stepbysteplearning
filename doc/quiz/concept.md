@@ -197,7 +197,7 @@
 >```
 > 1. int 1i = 10; ----> 变量名首位不可为数字
 > 2. String default = "what's your super power again ? answer: I'm rich !!!"; ----> 变量名不可为保留字
-> 3. long number_ = 10000000L; ----> 变量名首字母应大写
+> 3. long number_ = 10000000L; ----> 按惯例常量命名为全大写，下划线用户分隔大写单词
 >```
 
 #### java 中，指示常量的关键字是什么，并简单解释此关键字的作用
@@ -253,7 +253,7 @@
 >```
 > String string = "I'm using java!" 
 > string.substring(0, 5): "I'm u"  substring（a , b）取子字符串，自a位开始，b位结束，包含a，不包含b
-> string.substring(9):  "java！"   substring(c)取子字符串，自a位开始至字符串结束
+> string.substring(9):  " java！"   substring(c)取子字符串，自a位开始至字符串结束
 >```
 
 #### 请运行下列代码，并解释现象
@@ -284,14 +284,23 @@
 > The answer goes here
 >```
 > String[] str = {"烤", "鸡", "翅", "膀", "啊", "，", "我", "最", "爱", "吃", "！"};
->不是很明白该题的目的
+>1. for (int i = 0; i < str.length; i++) {
+>   System.out.println(str[i]);
+>}
+>2. for (String word: str) {
+>   System.out.println(word);
+>}
 >```
 
 #### 请将数组转化成 List
 > The answer goes here
 >```
 > String[] str = {"烤", "鸡", "翅", "膀", "啊", "，", "我", "最", "爱", "吃", "！"};
-> ArrayList<Element> arrayList = new ArrayList<Element>(Arrays.asList(str));
+>ArrayList list = new ArrayList();
+>for (int e: str) {
+>    list.add(e);
+>} 
+>System.out.println(list);
 >```
 
 ### Day 4

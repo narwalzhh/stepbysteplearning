@@ -1,6 +1,6 @@
 package com.rookiego.quiz.day3;
 
-public class TestClassComputer {
+public class computer {
 	private String mouse;
 	private String keyboard;
 	private String graphicsCard;
@@ -9,7 +9,7 @@ public class TestClassComputer {
 	private String mainboard;
 	private String powerSupply;
 
-	public TestClassComputer(String mouse, String keyboard, String graphicsCard, String screen, String cpu,
+	public computer(String mouse, String keyboard, String graphicsCard, String screen, String cpu,
 			String mainboard, String powerSupply) {
 		this.mouse = mouse;
 		this.keyboard = keyboard;
@@ -21,8 +21,7 @@ public class TestClassComputer {
 	}
 
 	public String toString() {
-		String back = "mouse:" + mouse + ",keyboard:" + keyboard + ", graphicsCard:" + graphicsCard + ",screen:"
-				+ screen + ",cpu:" + cpu + ",mainboard:" + mainboard + ",powerSupply:" + powerSupply;
-		return back;
+		return "{mouse:" + mouse + ",keyboard:" + keyboard + ", graphicsCard:" + graphicsCard + ",screen:"
+				+ screen + ",cpu:" + cpu + ",mainboard:" + mainboard + ",powerSupply:" + powerSupply + "}";
 	}
 }

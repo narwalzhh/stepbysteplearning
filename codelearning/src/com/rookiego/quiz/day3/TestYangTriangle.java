@@ -2,6 +2,8 @@ package com.rookiego.quiz.day3;
 
 import java.util.Arrays;
 
+//如何输出居中还没想到，输出方式不尽人意,循环嵌套太多
+
 public class TestYangTriangle {
 	public static void main(String[] args) {
 		int[][] number = new int[10][];
@@ -26,4 +28,3 @@ public class TestYangTriangle {
 		}
 	}
 }
-// 如何输出居中还没想到，输出方式不尽人意,循环嵌套太多
