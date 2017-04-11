@@ -10,6 +10,7 @@ public class TestYangTriangle {
 		for (int i = 0; i < 10; i++) {
 			number[i] = new int[i + 1];
 			number[i][0] = 1;
+			
 			for (int j = 1; j < i; j++) {
 				number[i][j] = number[i - 1][j - 1] + number[i - 1][j];
 			}

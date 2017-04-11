@@ -197,7 +197,7 @@
 >```
 > 1. int 1i = 10; ----> 变量名首位不可为数字
 > 2. String default = "what's your super power again ? answer: I'm rich !!!"; ----> 变量名不可为保留字
-> 3. long number_ = 10000000L; ----> 按惯例常量命名为全大写，下划线用户分隔大写单词
+> 3. long number_ = 10000000L; ----> 按惯例常量命名为全大写，下划线用来分隔大写单词
 >```
 
 #### java 中，指示常量的关键字是什么，并简单解释此关键字的作用
@@ -271,7 +271,7 @@
 >  }
 >   System.out.println("abc".equals(a));
 >
-> 解释：equals()方法在String中重写，用于比较调用对象引用与方法参数引用所指向字符串内容是否相同。a为String类的引用，前者将a指向null后，a表示不确定的对象，因此a不再包含equals()方法，因此运行程序报错。后者"abc"为字符串对象，包含equals()方法，比较"abc"与null指向内容后发现不同，因此返回false
+> 解释：equals()方法在String中重写，用于比较调用对象引用与方法参数引用所指向字符串内容是否相同。a为String类的引用，前者将a指向null后，a表示为空，因此a不再包含equals()方法，因此运行程序报错。后者"abc"为字符串对象，包含equals()方法，比较"abc"与null指向内容后发现不同，因此返回false
 >```
 
 #### 请自行搜索 switch case 语句的穿透现象，并作简单解释
@@ -296,7 +296,7 @@
 > The answer goes here
 >```
 > String[] str = {"烤", "鸡", "翅", "膀", "啊", "，", "我", "最", "爱", "吃", "！"};
->ArrayList list = new ArrayList();
+>List list = new ArrayList();
 >for (int e: str) {
 >    list.add(e);
 >} 
