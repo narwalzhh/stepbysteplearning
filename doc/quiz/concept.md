@@ -321,14 +321,14 @@
 
 #### 如何理解类之间的如下关系
 >```
-> 1. 依赖： uses-a
-> 2. 聚合： has-a
-> 3. 继承： is-a
+> 1. 依赖： uses-a  一个类的方法操纵另一个类的对象
+> 2. 聚合： has-a   一个类的对象包含另一个类的对象
+> 3. 继承： is-a    一个类B扩展于另一个类A，不仅包含A的方法属性还包含自己的方法属性
 >```
 
 #### Java 类构造方法命名有什么要求
 >```
->驼峰命名，且首字母大写
+>必须与类名相同
 >```
 
 #### 什么是方法的重载和方法的重写，请说明
@@ -349,11 +349,17 @@
 
 #### Java 中局部变量是否可以初始化，举例说明
 >```
+>想不出来呀
 >可以，for （int i = 1; i < 3; i++） {}
 >```
 
 #### 请自行模拟一个对象，对象中含有若干个属性，为属性编写 getter、setter 方法（Eclipse 有相应的快捷键），并说明 get 和 set 方法区别
 >```
+>package com.rookiego.test;
+>
+>import java.io.IOException;
+>import java.io.InputStream;
+>
 >public class Student {
 >	private int id;
 >	private String name;
@@ -367,24 +373,25 @@
 >		return id;
 >	}
 >
->	public String getName() {
->		return name;
->	}
->
 >	public void setId(int id) {
 >		this.id = id;
 >	}
 >
->	public void setName(Sting name) {
+>	public String getName() {
+>		return name;
+>	}
+>
+>	public void setName(String name) {
 >		this.name = name;
 >	}
 >
 >}
+>get方法仅返回属性值，只读，可以保护类成员被恶意修改；set方法可以重置属性的值，可写
 >```
 
 #### Java 中方法接受的参数是调用者的值还是引用
 >```
->引用
+>java方法使用的是参数值的拷贝，且只能使用值的拷贝
 >```
 
 #### Java 中方法重载的规则是什么
@@ -394,7 +401,7 @@
 
 #### Java 类中在构造方法中是否可以调用其它的构造方法
 >```
->可以，子类构造函数可以先调用父类的构造函数，再调用子类自己的构造函数
+>可以，子类可以通过super关键字来调用父类的构造方法，也可以使用this关键字来调用其他构造方法
 >```
 
 #### Java 中想要在类中使用其它包（package）中的类，需要使用的关键字是什么
@@ -404,6 +411,7 @@
 
 #### Java 中将类放入某个package中，需要使用的关键字是什么，使用该关键字有什么要求
 >```
+>要求是什么呀
 >package，包名必须全部小写，命名一般为“com.公司名.项目名.模块名...”
 >```
 
